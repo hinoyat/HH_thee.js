@@ -16,7 +16,8 @@ class DiaryEntry {
       }
       
       // 일기 내용 길이에 따라 별의 크기 결정 (길수록 더 큰 별)
-      this.size = Math.min(2 + (content.length / 100), 5);
+      // this.size = Math.min(2 + (content.length / 100), 5);
+      this.size = 2;
       
       // 별의 색상 (나중에 감정 분석 등으로 결정할 수 있음)
       this.color = DiaryEntry.getRandomColor();
